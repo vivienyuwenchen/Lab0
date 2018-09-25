@@ -42,5 +42,7 @@ module FullAdder4bit
     wire cout0;
     structuralFullAdder adder0 (sum[0], cout0, a[0], b[0], 1'b0);
     structuralFullAdder adder1 (sum[1], carryout, a[1], b[1], cout0);
-    buf buf0(overflow, carryout);
+    xor xorgate0(atest, sum[1], a[1]);
+    xor xorgate1(btest, sum[1], b[1]);
+    and andgate(overflow, atest, btest);
 endmodule
