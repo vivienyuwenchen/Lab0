@@ -33,16 +33,20 @@ endmodule
 
 module FullAdder4bit
 (
-    output[1:0] sum,  // 2's complement sum of a and b
+    output[3:0] sum,  // 2's complement sum of a and b
     output carryout,  // Carry out of the summation of a and b
     output overflow,  // True if the calculation resulted in an overflow
-    input[1:0] a,     // First operand in 2's complement format
-    input[1:0] b      // Second operand in 2's complement format
+    input[3:0] a,     // First operand in 2's complement format
+    input[3:0] b      // Second operand in 2's complement format
 );
-    wire cout0, atest, btest;
+    wire cout0, cout1, cout2, atest, btest;
     structuralFullAdder adder0 (sum[0], cout0, a[0], b[0], 1'b0);
-    structuralFullAdder adder1 (sum[1], carryout, a[1], b[1], cout0);
-    xor xorgate0(atest, sum[1], a[1]);
-    xor xorgate1(btest, sum[1], b[1]);
-    and andgate(overflow, atest, btest);
+    structuralFullAdder adder1 (sum[1], cout1, a[1], b[1], cout0);
+    structuralFullAdder adder2 (sum[2], cout2, a[2], b[2], cout1);
+    structuralFullAdder adder3 (sum[3], carryout, a[3], b[3], cout2);
+    // Determine overflow based on most significant bit. 
+    // Overflow occurrs when a[3]=b[3]=0 and sum[3]=1. OR a[3]=b[3]=1 and sum[3]=0
+    `XOR xorgate0(atest, sum[3], a[3]);
+    `XOR xorgate1(btest, sum[3], b[3]);
+    `AND andgate(overflow, atest, btest);
 endmodule

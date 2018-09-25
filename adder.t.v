@@ -3,35 +3,34 @@
 `include "adder.v"
 
 module testFullAdder();
-    reg [1:0] a, b;
-    wire [1:0] sum;
+    reg [3:0] a, b;
+    wire [3:0] sum;
     wire carryout, overflow;
 
-    //behavioralFullAdder adder (sum, carryout, a, b, carryin);
-    //structuralFullAdder adder (sum, carryout, a, b, carryin);
     FullAdder4bit adder (sum, carryout, overflow, a, b);
 
     initial begin
-        // Your test code here
- //       $dumpfile("adder.vcd");
+  //      $dumpfile("adder.vcd");
   //      $dumpvars(0, a, b, carryout, sum);
-        $display("A B | Cout Sum Over | Expected Cout, Sum");
-        a=2'b00;b=2'b01; #1000
-        $display("%b %b   |    %b   %b    %b |             0    0", a, b, carryout, sum, overflow);
-        // a=0;b=0;carryin=1; #1000
-        // $display("%b %b %b   |    %b   %b |             0    1", a, b, carryin, carryout, sum);
-        // a=0;b=1;carryin=0; #1000
-        // $display("%b %b %b   |    %b   %b |             0    1", a, b, carryin, carryout, sum);
-        // a=0;b=1;carryin=1; #1000
-        // $display("%b %b %b   |    %b   %b |             1    0", a, b, carryin, carryout, sum);
-        // a=1;b=0;carryin=0; #1000
-        // $display("%b %b %b   |    %b   %b |             0    1", a, b, carryin, carryout, sum);
-        // a=1;b=0;carryin=1; #1000
-        // $display("%b %b %b   |    %b   %b |             1    0", a, b, carryin, carryout, sum);
-        // a=1;b=1;carryin=0; #1000
-        // $display("%b %b %b   |    %b   %b |             1    0", a, b, carryin, carryout, sum);
-        // a=1;b=1;carryin=1; #1000
-        // $display("%b %b %b   |    %b   %b |             1    1", a, b, carryin, carryout, sum);
+        $display("A    B    | Cout Sum   Over  | Ecout Esum   Eover");
+        // Testing examples from Slide Deck 4 "Addition in Two's Complement"
+        a=4'b0010;b=4'b0100; #1000
+        $display("%b %b |  %b   %b   %b    | 0     0110   0", a, b, carryout, sum, overflow);
+		a=4'b0010;b=4'b1100; #1000
+        $display("%b %b |  %b   %b   %b    | 0     1110   0", a, b, carryout, sum, overflow);
+        a=4'b1110;b=4'b1100; #1000
+        $display("%b %b |  %b   %b   %b    | 1     1010   0", a, b, carryout, sum, overflow);
+        a=4'b1110;b=4'b0100; #1000
+        $display("%b %b |  %b   %b   %b    | 1     0010   0", a, b, carryout, sum, overflow);
+        // Testing examples from Slide Deck 4 "Overflow Detection in 2's Complement"
+        a=4'b0101;b=4'b0011; #1000
+        $display("%b %b |  %b   %b   %b    | 0     1000   1", a, b, carryout, sum, overflow);
+        a=4'b0101;b=4'b0010; #1000
+        $display("%b %b |  %b   %b   %b    | 0     0111   0", a, b, carryout, sum, overflow);
+        a=4'b1001;b=4'b1110; #1000
+        $display("%b %b |  %b   %b   %b    | 1     0111   1", a, b, carryout, sum, overflow);
+        a=4'b1101;b=4'b1011; #1000
+        $display("%b %b |  %b   %b   %b    | 1     1000   0", a, b, carryout, sum, overflow);
   //      $finish();
     end
 endmodule
