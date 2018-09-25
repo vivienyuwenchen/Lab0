@@ -10,8 +10,8 @@ module testFullAdder();
     FullAdder4bit adder (sum, carryout, overflow, a, b);
 
     initial begin
-  //      $dumpfile("adder.vcd");
-  //      $dumpvars(0, a, b, carryout, sum);
+        $dumpfile("adder.vcd");
+        $dumpvars();
         $display("A    B    | Cout Sum   Over  | Ecout Esum   Eover");
         // Testing examples from Slide Deck 4 "Addition in Two's Complement"
         a=4'b0010;b=4'b0100; #1000
@@ -31,6 +31,6 @@ module testFullAdder();
         $display("%b %b |  %b   %b   %b    | 1     0111   1", a, b, carryout, sum, overflow);
         a=4'b1101;b=4'b1011; #1000
         $display("%b %b |  %b   %b   %b    | 1     1000   0", a, b, carryout, sum, overflow);
-  //      $finish();
+        $finish();
     end
 endmodule
