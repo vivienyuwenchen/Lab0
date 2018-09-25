@@ -39,7 +39,7 @@ module FullAdder4bit
     input[1:0] a,     // First operand in 2's complement format
     input[1:0] b      // Second operand in 2's complement format
 );
-    wire cout0;
+    wire cout0, atest, btest;
     structuralFullAdder adder0 (sum[0], cout0, a[0], b[0], 1'b0);
     structuralFullAdder adder1 (sum[1], carryout, a[1], b[1], cout0);
     xor xorgate0(atest, sum[1], a[1]);
