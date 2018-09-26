@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Sep 25 20:21:17 2018
+# Process ID: 12446
+# Current directory: /home/comparch/CompArch_HW/Lab0/lab0/lab0.runs/synth_1
+# Command line: vivado -log hw_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source hw_wrapper.tcl
+# Log file: /home/comparch/CompArch_HW/Lab0/lab0/lab0.runs/synth_1/hw_wrapper.vds
+# Journal file: /home/comparch/CompArch_HW/Lab0/lab0/lab0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source hw_wrapper.tcl -notrace
