@@ -13,6 +13,7 @@ module testFullAdder();
         $dumpfile("adder.vcd");
         $dumpvars();
         $display("A    B    | Cout Sum   Over  | Ecout Esum   Eover");
+        // Set 16 test cases and output results to compare with expected results
         a=4'b0000;b=4'b0000; #1000
         $display("%b %b |  %b   %b   %b    | 0     0000   0", a, b, carryout, sum, overflow);
         a=4'b0010;b=4'b0100; #1000

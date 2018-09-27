@@ -778,3 +778,181 @@ selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Conne
 // Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
 dismissDialog("Auto Connect"); // bx (ck)
 // TclEventType: FILE_SET_CHANGE
+// Elapsed time: 1078 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/comparch/CompArch_HW/Lab0/lab0/lab0.runs/impl_1/lab0_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,687 MB. GUI used memory: 50 MB. Current time: 9/26/18 9:03:08 PM EDT
+// Elapsed time: 252 seconds
+selectTab((HResource) null, (HResource) null, "Serial I/O Scans", 3); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Serial I/O Links", 2); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aE (Q, ck)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aE (Q, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 12 seconds
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 6 ; 9 ; 0.0 ; 0 ; 0 ; Wed Sep 26 19:49:16 EDT 2018 ; 00:02:16 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xc7z010clg400-1 ;  ; Vivado Synthesis Defaults", 0); // ax (O, ck)
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; synth_design Complete! ;  ;  ;  ;  ;  ;  ;  ; 6 ; 9 ; 0.0 ; 0 ; 0 ; Wed Sep 26 19:49:16 EDT 2018 ; 00:02:16 ; Vivado Synthesis Defaults (Vivado Synthesis 2018) ; Vivado Synthesis Default Reports (Vivado Synthesis 2018) ; xc7z010clg400-1 ;  ; Vivado Synthesis Defaults", 0); // ax (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,701 MB. GUI used memory: 51 MB. Current time: 9/26/18 9:33:08 PM EDT
+// Elapsed time: 2283 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 6837", 2, "synth_1_synth_report_utilization_0", 0, false); // N (O, ck)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 6837", 2); // N (O, ck)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_report_utilization_0 ; Report on utilization of resources on the targeted device (report_utilization) ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 6837", 2, "synth_1_synth_report_utilization_0", 0, false, false, false, false, false, true); // N (O, ck) - Double Click
+// Elapsed time: 45 seconds
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 20578", 3, "synth_1_synth_synthesis_report_0", 0, false); // N (O, ck)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 20578", 3, "synth_1_synth_synthesis_report_0", 0, false); // N (O, ck)
+expandTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 20578", 3); // N (O, ck)
+selectTreeTable(PAResourceEtoH.ExpReportTreePanel_EXP_REPORT_TREE_TABLE, "synth_1_synth_synthesis_report_0 ; Vivado Synthesis Report ;  ; Wed Sep 26 19:51:32 EDT 2018 ; 20578", 3, "synth_1_synth_synthesis_report_0", 0, false, false, false, false, false, true); // N (O, ck) - Double Click
+// Elapsed time: 32 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "synth_1_synth_report_utilization_0 - synth_1", 1); // k (j, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("synth_1_synth_report_utilization_0 - synth_1", 597, 355); // D (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "pro"); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "synth_1_synth_synthesis_report_0 - synth_1", 2); // k (j, ck)
+selectCodeEditor("synth_1_synth_synthesis_report_0 - synth_1", 395, 229); // D (w, ck)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop", true); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "prop"); // l (aQ, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "synth_1_synth_report_utilization_0 - synth_1", 1); // k (j, ck)
+// Elapsed time: 176 seconds
+selectCodeEditor("synth_1_synth_report_utilization_0 - synth_1", 425, 75); // D (w, ck)
+selectCodeEditor("synth_1_synth_report_utilization_0 - synth_1", 219, 41); // D (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,706 MB. GUI used memory: 52 MB. Current time: 9/26/18 9:56:28 PM EDT
+// Elapsed time: 486 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+// Elapsed time: 22 seconds
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryTimingPanel_PROJECT_SUMMARY_TIMING_PANEL_TABBED, PAResourceOtoP.ProjectSummaryTimingPanel_HOLD, "Hold", 1); // d (C, ck)
+selectButton(PAResourceOtoP.ProjectSummaryTimingPanel_OPEN_TIMING_SUMMARY_REPORT, "Implemented Timing Report"); // h (Q, ck)
+// Elapsed time: 17 seconds
+selectButton(PAResourceOtoP.ProjectSummaryDRCPanel_OPEN_DRC_REPORT, "Implemented DRC Report"); // h (Q, ck)
+// Elapsed time: 42 seconds
+selectTab(PAResourceOtoP.ProjectSummaryTimingPanel_PROJECT_SUMMARY_TIMING_PANEL_TABBED, PAResourceOtoP.ProjectSummaryTimingPanel_PULSE_WIDTH, "Pulse Width", 2); // d (C, ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279651546A 
+// TclEventType: HW_SERVER_UPDATE
+// n (ck): Close Hardware Target: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 50 MB. Current time: 9/26/18 11:32:15 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 50 MB. Current time: 9/27/18 12:02:15 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 50 MB. Current time: 9/27/18 12:32:15 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 51 MB. Current time: 9/27/18 1:02:15 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 49 MB. Current time: 9/27/18 10:07:22 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 49 MB. Current time: 9/27/18 10:37:22 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 49 MB. Current time: 9/27/18 3:29:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 50 MB. Current time: 9/27/18 3:59:06 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 49 MB. Current time: 9/27/18 4:29:07 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,709 MB. GUI used memory: 49 MB. Current time: 9/27/18 5:35:07 PM EDT
+// Elapsed time: 70738 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// Elapsed time: 35 seconds
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "IO ; 13 ; 100 ; 13.0", 2, "100", 2); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Utilization %", 3); // s (Q, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // f (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "3.125", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "IO ; 13 ; 100 ; 13.0", 2, "13.0", 3); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Utilization %", 3); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Utilization %", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "synth_1_synth_report_utilization_0 - synth_1", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_OPEN_POWER_REPORT, "Implemented Power Report"); // h (Q, ck)
+selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_OPEN_POWER_REPORT, "Implemented Power Report"); // h (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "6", 1, false, false, false, true, false); // s (Q, ck) - Popup Trigger
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "6", 1, false, false, false, true, false); // s (Q, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "1", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "1", 1, false, false, false, false, true); // s (Q, ck) - Double Click
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "1", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "1", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "1", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "LUT", 0); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "LUT", 0); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Resource", 0); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "FF ; 9 ; 35200 ; 0.02556818", 1, "9", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "6", 1); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Utilization", 1); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "BUFG ; 1 ; 32 ; 3.125", 3, "3.125", 3); // s (Q, ck)
+// Elapsed time: 34 seconds
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3, false, false, false, false, true); // s (Q, ck) - Double Click
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "0.03409091", 3); // s (Q, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_GRAPH, "Graph", 0); // f (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_SYNTHESIS, "Post-Synthesis", 0); // b (C, ck)
+// Elapsed time: 114 seconds
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "17600", 2); // s (Q, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationGadget_PROJECT_SUMMARY_UTILIZATION_GADGET_TABBED, PAResourceOtoP.ProjectSummaryUtilizationGadget_POST_IMPLEMENTATION, "Post-Implementation", 1); // b (C, ck)
+selectTable(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "LUT ; 6 ; 17600 ; 0.03409091", 0, "LUT", 0); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Utilization %", 3); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+applyEscape(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, (String) null); // s (Q, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Available", 2, false, false, false, true, false); // s (Q, ck) - Popup Trigger
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Available", 2, false, false, false, true, false); // s (Q, ck) - Popup Trigger
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Available", 2, false, false, false, true, false); // s (Q, ck) - Popup Trigger
+selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_OPEN_POWER_REPORT, "Implemented Power Report"); // h (Q, ck)
+selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
+selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Resource", 0); // s (Q, ck)
