@@ -956,3 +956,4 @@ selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_
 selectButton(PAResourceOtoP.ProjectSummaryPowerPanel_OPEN_POWER_REPORT, "Implemented Power Report"); // h (Q, ck)
 selectTab(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_PANEL_TABBED, PAResourceOtoP.ProjectSummaryUtilizationPanel_TABLE, "Table", 1); // f (C, ck)
 selectTableHeader(PAResourceOtoP.ProjectSummaryUtilizationPanel_PROJECT_SUMMARY_UTILIZATION_TABLE, "Resource", 0); // s (Q, ck)
+// TclEventType: FILE_SET_CHANGE

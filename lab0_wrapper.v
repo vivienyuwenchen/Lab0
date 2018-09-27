@@ -26,8 +26,6 @@
 
 `timescale 1 ns / 1 ps
 
-//`include "adder.v"
-
 
 //-----------------------------------------------------------------------------
 // Basic building block modules
